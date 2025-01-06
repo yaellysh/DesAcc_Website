@@ -2,43 +2,54 @@
 import { useState } from 'react';
 
 const Navbar = () => {
-  const [showSearch, setShowSearch] = useState(false);
+  // const [showSearch, setShowSearch] = useState(false);
 
-  const toggleSearch = () => {
-    console.log("Search clicked.");
-    setShowSearch(!showSearch); // toggle the search bar visibility
-  };
+  // const toggleSearch = () => {
+  //   setShowSearch(!showSearch); 
+  // };
 
   return (
-    <header className="flex justify-between items-center md:p-4 bg-white border-b border-gray-200 shadow-sm">
-      <div className="flex items-center gap-4">
-        <img src="/DesAcc_logo_rgb_horizontal_with line_delft blue.png" alt="Qunantitate logo" className="h-12" />
+    <header className="flex justify-between items-center md:p-4 bg-white border shadow-sm">
+      <div className="flex items-center">
+        {/* Single line logo */}
+        <img src="/DesAcc_logo_rgb_horizontal_with line_delft blue1.png" alt="Desacc title" className="md:h-[3rem] md:ml-28" />
+
       </div>
 
-      <div className="relative flex items-center gap-2">
+      {/* <div className="relative flex items-center gap-2">
         <button
           onClick={toggleSearch}
-          className="p-2 bg-transparent border-none focus:outline-none"
+          className="pr-16 bg-transparent border-none focus:outline-none"
         >
-          <img
-            src="/search.png" 
-            alt="Search"
-            className="w-6 h-6"
-          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="text-gray-500"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
         </button>
 
-        {/* Search Input Field */}
+
         <input
           type="text"
           placeholder="Search..."
-          className={`p-2 border rounded-md border-gray-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-            showSearch ? 'w-48 opacity-100' : 'w-0 opacity-0'
+          className={`p-2 border border-gray-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+            showSearch ? 'w-60 rounded opacity-100' : 'w-0 opacity-0'
           }`}
           style={{
             transition: 'width 0.3s ease, opacity 0.3s ease',
           }}
         />
-      </div>
+      </div> */}
     </header>
   );
 };

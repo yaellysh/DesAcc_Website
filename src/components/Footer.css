@@ -1,0 +1,7 @@
+.title-bg-image {
+    position: relative;
+    background-image: url('/bg_images/title_bg.png');
+    background-size: cover; /* Full screen width, height adjusts automatically */
+    background-position: top center; /* Aligns the image at the top center */
+    background-repeat: no-repeat; /* Prevents tiling */
+}

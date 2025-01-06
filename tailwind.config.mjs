@@ -2,7 +2,11 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			boxShadow: {
+				'sharp': '5px 5px 0px rgba(0, 0, 0, 0.3)',  
+			  },
+		}
 	},
 	plugins: [],
 }

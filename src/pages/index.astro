@@ -1,8 +1,337 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.jsx';
+import VendorCard from '../components/VendorCard.astro';
+import Footer from '../components/Footer.jsx';
+import ScrollButton from '../components/ScrollButton.jsx';
 ---
 
+
 <Layout>
-	<Navbar client:visible />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div class="min-h-screen flex flex-col relative">
+		<Navbar client:visible/>
+		<div class="flex flex-col md:flex-row p-4 md:py-12 items-stretch title-bg-image shadow-md">
+			<!-- Text Column -->
+			<div class="md:w-1/2 pl-10 md:pl-32 py-16 flex flex-col justify-between">
+			<div>
+				<!-- 36c76b -->
+					<h1 id="title" class="text-3xl md:text-[4vw] font-bold">
+						Your Health Data. <span class="text-[#e36909]">Unlocked.</span>
+					</h1>
+					<p class="text-lg md:pt-8 md:text-[3vw] mb-2 text-gray-400 rotating-text" id="rotatingText"></p>
+					<p class="pr-12 md:pr-0 text-sm md:text-[2vw] md:leading-none md:py-14 md:w-[30vw] my-auto">
+						Delivering continuity across health data environments in an ever increasing work of data complexity.
+					</p>
+				</div>
+				<div>
+					<ScrollButton client:visible />
+				</div>
+			</div>
+			<!-- Image Column -->
+			<div id="title_image" class="md:w-[35vw] md:h-auto pt-12 flex items-end justify-center flex-col items-center justify-center">
+				<img src="/graphic.png" class="md:w-[60rem] lg:w-[50rem] mb-10" />
+			</div>
+		</div>
+		
+		<div id="vendors" class="bs bg-opacity-100 z-20 relative shadow-md">
+			<h1 class="mx-20 text-center font-bold text-xs md:text-xl text-[#194b92] pt-8 h-14 flex items-center justify-center">
+				<!-- Trusted by healthcare systems and vendors around the world for over 30 years. -->
+				TRUSTED BY HEALTHCARE SYSTEMS AND VENDORS AROUND THE WORLD FOR OVER 30 YEARS.
+
+			</h1>
+			<div id="vendor_logos" class="grid grid-cols-2 md:gap-4 justify-center overflow-x-auto md:flex md:justify-center" style="justify-items: center;">
+				<img src="/vendor_logos/Ochsner Health System.png" alt="Ochsner Health Logo" class="h-[6rem] md:h-[10rem] md:mx-[1rem]" />
+				<img src="/vendor_logos/Government of Western Australia.png" alt="Western Australia Health Logo" class="h-[6rem] md:h-[10rem] md:mx-[1rem]" />
+				<img src="/vendor_logos/Standford Health Care.png" alt="Standford Health Care Logo" class="h-[6rem] md:h-[10rem] md:mx-[1rem]" />
+				<img src="/vendor_logos/Lameris_logo.png" alt="Lameris Logo" class="h-[6rem] md:h-[8rem] py-6 md:mx-[1rem] md:my-[1.5rem]" />
+			</div>
+		</div>
+
+		<div id="vendorSection" class="flex flex-col md:flex-row py-12 items-stretch h-full vendor-bg-image shadow-md">
+			<!-- Button column -->
+			<div id="toggleButton" class="flex items-center pl-12">
+				<button  class="p-2 bg-gray-400 mr-4 text-white rounded">
+					←
+				</button>
+			</div>
+
+			<!-- Vendor card column -->
+			<div class="flex flex-col md:w-[50em] lg:w-[90em] items-center">
+				<div id="vendorFrame" class="flex flex-col md:flex-row flex-grow">
+					<div id="vendorGroup1" class="grid grid-cols-2 gap-1 md:gap-4"> 
+						<VendorCard 
+							name="Ochsner Health" 
+							imageSrc="/vendor_logos/Ochsner Health System.png" 
+							description={["Radiology/Cardiology", "20+ PACS Engagement"]}
+							location="North America"
+						/>
+						<VendorCard 
+							name="Western Australia Health" 
+							imageSrc="/vendor_logos/Government of Western Australia.png" 
+							description={["PACS/VNA/RIS", "70M+ Reports"]}
+							location="APAC"
+						/>
+						<VendorCard 
+							name="Regional Healthcare Provider" 
+							imageSrc="/vendor_logos/hospital.png" 
+							description={["100M+ Studies, 200+ Hospitals", "PACS/VNA"]}
+							location="North America"
+						/>
+						<VendorCard 
+							name="Stanford Healthcare" 
+							imageSrc="/vendor_logos/Standford Health Care.png" 
+							description={["APLIS/PACS", "Pathology"]}
+							location="North America"
+						/>
+					</div>
+					<div id="vendorGroup2" class="grid grid-cols-2 gap-1 md:gap-4 hidden"> 
+						<VendorCard 
+							name="Global Technology Vendor" 
+							imageSrc="/vendor_logos/global.png" 
+								description={["DICOM Platform Software Layer", "2000+ Cancer Centers"]}
+							location="Worldwide"
+							/>
+						<VendorCard 
+							name="University Research Hospital" 
+							imageSrc="/vendor_logos/university.png" 
+							description={["Lameris", "Opthamology"]}
+							location="Europe"
+						/>
+						<VendorCard 
+							name="Partner Engagement" 
+							imageSrc="/vendor_logos/partner.png" 
+							description={["Delivering IHE Standards", "Document delivery via XDS"]}
+							location="Europe"
+						/>
+						<VendorCard 
+							name="Radiology Service Vendor" 
+							imageSrc="/vendor_logos/radiology.png" 
+							description={["PACS", "Cloud Centralization"]}
+							location="North America"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<!-- Text column -->
+			<div class="flex items-center justify-center  px-12">
+				<p class="pt-12 text-center text-sm md:text-3xl md:mx-4 text-left">
+					We facilitate and deliver data-driven software and solutions for health service vendors and healthcare enterprises at petabyte scale, globally.
+				</p>
+			</div>
+		</div>
+
+		<!-- bg-[#f2f7f9]  -->
+		<div id="hdd" class="bg-opacity-100 z-20 relative py-8 shadow-md">
+			<h1 class="text-xl md:text-5xl px-12 leading-tight md:leading-none md:px-32 font-bold pt-8 pb-4 md:pb-12 text-center text-[#194b92]">Designing Access to Health Data Discovery and Delivery</h1>
+			<div class="flex flex-col md:flex-row md:mx-32">
+				<div id="hdd_col1" class="flex-1 p-4 md:w-1/4 flex flex-col justify-between">
+					<p class="text-center font-thin md:text-left text-sm md:text-[1.75rem] italic md:leading-none px-12 md:px-0 md:pr-20"> "We are surrounded by locked-in silos of health data. Whether that lock-in is due to vendors, complexity, skills shortages or just the sheer amount of data being generated doesn't matter. Our goal at DesAcc is to build and deliver solutions for addressing data lock- in, enabling access to health data wherever and however it is stored."</p>
+					<div id="credits" class="">
+						<h1 class='text-sm md:text-3xl'>Hugh Lyshkow</h1>
+						<p class='text-sm md:text-xl font-bold'>CEO, Co-Founder</p>
+					</div>
+				</div>
+				<div class="flex-1 p-4">
+					<h3 class="text-sm md:text-4xl pb-4">Services for Unlocking</h3>
+					<div class="text-[0.6rem] md:text-lg">
+						<p>Radiology Silos</p>
+						<p>xxx</p>
+						<br/>
+						<p>Pathology Silos</p>
+						<p>xxx</p>
+						<br/>
+						<p>Cardiology Silos</p>
+						<p>xxx</p>
+						<br/>
+						<p>Genomics Silos</p>
+						<p>xxx</p>
+						<br/>
+						<p>Document Silos</p>
+						<p>xxx</p>
+						<br/>
+						<p>Legacy Silos</p>
+						<p>xxx</p>
+					</div>
+				</div>
+				<div class="flex-1 p-4">
+					<h3 class="text-sm md:text-4xl pb-4">Software for Delivering</h3>
+					<div class="text-[0.6rem] md:text-lg">
+						<p>Data Discovery</p>
+						<p>xxx</p>
+						<br/>
+						<p>Data Quality</p>
+						<p>xxx</p>
+						<br/>
+						<p>Data Enrichment</p>
+						<p>xxx</p>
+						<br/>
+						<p>Data Delivery</p>
+						<p>xxx</p>
+						<br/>
+						<p>Data Integrity</p>
+						<p>xxx</p>
+						<br/>
+						<p>Data Lifecycle</p>
+						<p>xxx</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<Footer />
 </Layout>
+
+<script>
+	const texts = [
+		"Enabling cloud deployment.",
+		"Empowering healthcare innovation.",
+		"Transforming data into insights.",
+		"Connecting health systems globally."
+	];
+
+	let index = 0;
+	const rotatingTextElement = document.getElementById('rotatingText');
+
+	function changeText() {
+		if (rotatingTextElement) {
+			rotatingTextElement.classList.remove('visible'); 
+			setTimeout(() => {
+				rotatingTextElement.textContent = texts[index];
+				rotatingTextElement.classList.add('visible'); 
+			}, 500); 
+		}
+		index = (index + 1) % texts.length;
+	}
+
+	setInterval(changeText, 3000);
+	changeText(); 
+
+	const vendorGroup1 = document.getElementById('vendorGroup1');
+	const vendorGroup2 = document.getElementById('vendorGroup2');
+
+	let currentGroup = 1;
+
+	function toggleVendorGroups() {
+		if (vendorGroup1 && vendorGroup2) {
+			if (currentGroup === 1) {
+				vendorGroup1.classList.add('fade-out');
+				setTimeout(() => {
+					vendorGroup1.classList.add('hidden');
+					vendorGroup1.classList.remove('fade-out');
+					vendorGroup2.classList.remove('hidden');
+					vendorGroup2.classList.add('fade-in');
+					setTimeout(() => vendorGroup2.classList.remove('fade-in'), 500);
+					currentGroup = 2;
+				}, 500);
+			} else {
+				vendorGroup2.classList.add('fade-out');
+				setTimeout(() => {
+					vendorGroup2.classList.add('hidden');
+					vendorGroup2.classList.remove('fade-out');
+					vendorGroup1.classList.remove('hidden');
+					vendorGroup1.classList.add('fade-in');
+					setTimeout(() => vendorGroup1.classList.remove('fade-in'), 500);
+					currentGroup = 1;
+				}, 500);
+			}
+		} else {
+			console.error('Vendor groups not found');
+		}
+	}
+
+	setInterval(toggleVendorGroups, 8000);
+
+	const toggleButton = document.getElementById('toggleButton');
+	if (toggleButton) {
+		toggleButton.addEventListener('click', toggleVendorGroups);
+	}
+
+</script>
+
+
+<style>
+	.rotating-text {
+		transition: opacity 0.5s ease-in-out;
+		opacity: 0; 
+	}
+	.rotating-text.visible {
+		opacity: 1;
+	}
+
+	.fade-out {
+		opacity: 1;
+		animation: fadeOut 0.5s ease-in-out forwards;
+	}
+
+	@keyframes fadeOut {
+		0% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+		100% {
+			opacity: 0;
+			transform: translateX(-20px);
+		}
+	}
+
+	/* Fade in animation */
+	.fade-in {
+		opacity: 0;
+		animation: fadeIn 0.5s ease-in-out forwards;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+			transform: translateX(20px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.title-bg-image {
+		position: relative;
+		background-image: url('/bg_images/title_bg.png');
+		background-size: cover; /* Full screen width, height adjusts automatically */
+		background-position: top center; /* Aligns the image at the top center */
+		background-repeat: no-repeat; /* Prevents tiling */
+	}
+
+	.vendor-bg-image {
+		position: relative;
+		background-image: url('/bg_images/vendor_bg.png');
+		background-size: cover; /* Full screen width, height adjusts automatically */
+		background-position: top center; /* Aligns the image at the top center */
+		background-repeat: no-repeat; /* Prevents tiling */
+	}
+
+	#title_image {
+		display: none;
+	}
+
+	#toggleButton {
+		display: none;
+	}
+
+
+	@media (min-width: 768px) {
+		#title_image {
+			display: flex;
+		}
+		#toggleButton {
+			display: flex;
+		}
+	}
+
+	
+</style>
+
