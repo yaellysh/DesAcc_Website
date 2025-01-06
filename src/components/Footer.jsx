@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex justify-between ml-4 md:ml-32 mt-8 md:pb-4">
             <div>
                 <div className="flex justify-between ml-[4rem]">
-                    <div class="text-[0.5rem] md:text-sm md:mr-8">
+                    <div className="text-[0.5rem] md:text-sm md:mr-8">
                         <h2 className="font-bold mb-2 md:mb-4">North America</h2>
                         <p>Toronto</p>
                         <p>M5E 1J8</p>
