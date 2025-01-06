@@ -17,5 +17,5 @@ const { name, imageSrc, description, location } = Astro.props;
   {Array.isArray(description) && description.map((desc) => (
     <p class="text-[0.6rem] md:text-sm">{desc}</p>
   ))}
-  <p class="text-[0.6rem] font-bold">{location}</p>
+  <p class="text-[0.6rem] md:text-lg font-bold">{location}</p>
 </div>
