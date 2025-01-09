@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
+---
+
+
+<Layout>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div class="min-h-screen flex flex-col relative">
+		<Navbar client:visible/>
+		<div>
+			<h1 class="md:mx-28 title">1. BACKGROUND </h1>
+			<p class="md:mx-28 text-justify">DesAcc operates in accordance with the EU General Data Protection Regulation (GDPR), Data Protection Act 2018 and Personal Information Protection and Electronic Documents Act (PIPEDA) and any other state or federal laws that maybe required during the course of its daily business.</p>
+			<br/>
+			<p class="md:mx-28 text-justify">The lawful and proper treatment of personal information by DesAcc is extremely important to the success of our business and in order to maintain the confidence of our clients and personnel. DesAcc ensures that it processes personal information lawfully and correctly.</p>
+			
+			<br/>
+
+			<h1 class="md:mx-28 title">2. DATA PRIVACY POLICY</h1>
+			<p class="md:mx-28 text-justify">This Data Privacy Policy has been developed so that you as a visitor to our website, social media sites or as a recipient of marketing materials are informed about what Personal Data DesAcc retains, how it is processed, and how we protect it. When conducting these activities DesAcc is acting as a data Controller and is responsible for your Personal Data as such.</p>
+			<br/>
+			<p class="md:mx-28 text-justify">At DesAcc EMEA Ltd, data management is our businesses. To this end, we are committed to maintaining the trust and confidence of our customers as such we do not sell, rent or trade email lists with other companies and businesses for marketing purposes.</p>
+			
+			<h1 class="md:mx-28 title">3. YOUR DATA, YOUR RIGHTS</h1>
+			<p class="md:mx-28 text-justify">Under modern data privacy law you now have more rights than ever before - you have the legitimate right to:</p>
+			
+			<br/>
+			<ul class="md:mx-32 list-disc pl-5">
+				<li>request any data we may hold on you.</li>
+				<li>to rectify the Personal Data, we hold about you.</li>
+				<li>to withdraw consent where we are relying on your consent to process Personal Data.</li>
+				<li>to be erased from our database under certain circumstances (with no effect on the lawfulness of any processing prior to your request to withdraw).</li>
+				<li>the conditional right to object processing.</li>
+				<li>the restriction to no further processing without prior consent, and to portability of your data.</li>
+
+			</ul>
+			<br />
+			<p class="md:mx-28 text-justify">Email your request to our DPO at DPO@DesAcc.com or call our UK office: +44 (0)1566 701 203.</p>
+		</div>
+
+		
+	</div>
+	<Footer />
+</Layout>
+
+<style>
+	.title {
+		font-size: 2rem;
+		font-weight: bold;
+		color: #333;
+		margin-top: 3rem;
+	}
+	
+</style>
+
+
