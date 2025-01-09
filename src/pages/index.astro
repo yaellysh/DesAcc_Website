@@ -89,13 +89,13 @@ import ScrollButton from '../components/ScrollButton.jsx';
 						<VendorCard 
 							name="Global Technology Vendor" 
 							imageSrc="/vendor_logos/global.png" 
-								description={["DICOM Platform Software Layer", "2000+ Cancer Centers"]}
+							description={["DICOM Platform Software Layer", "2000+ Cancer Centers"]}
 							location="Worldwide"
-							/>
+						/>
 						<VendorCard 
-							name="University Research Hospital" 
-							imageSrc="/vendor_logos/university.png" 
-							description={["Lameris", "Opthamology"]}
+							name="Lameris" 
+							imageSrc="/vendor_logos/Lameris_logo.png" 
+							description={["University Research Hospital", "Ophthalmology"]}
 							location="Europe"
 						/>
 						<VendorCard 
@@ -124,61 +124,59 @@ import ScrollButton from '../components/ScrollButton.jsx';
 
 		<!-- bg-[#f2f7f9]  -->
 		<div id="hdd" class="bg-opacity-100 z-20 relative py-8 shadow-md">
-			<h1 class="text-xl md:text-5xl px-12 leading-tight md:leading-none md:px-32 font-bold pt-8 pb-4 md:pb-12 text-center text-[#194b92]">Designing Access to Health Data Discovery and Delivery</h1>
-			<div class="flex flex-col md:flex-row md:mx-32">
+			<h1 class="text-xl md:text-5xl px-12 md:px-32 font-bold pt-8 pb-4 md:pb-12 text-center text-[#194b92]">Designing Access to Health Data Discovery and Delivery</h1>
+			<div class="flex flex-col md:flex-row md:mx-32" style="align-items: stretch;">
 				<div id="hdd_col1" class="flex-1 p-4 md:w-1/4 flex flex-col justify-between">
-					<p class="text-center font-thin md:text-left text-sm md:text-[1.75rem] italic md:leading-none px-12 md:px-0 md:pr-20"> "We are surrounded by locked-in silos of health data. Whether that lock-in is due to vendors, complexity, skills shortages or just the sheer amount of data being generated doesn't matter. Our goal at DesAcc is to build and deliver solutions for addressing data lock- in, enabling access to health data wherever and however it is stored."</p>
+					<p class="text-center md:text-left text-sm md:text-[1.75rem] italic md:leading-none px-12 md:px-0 md:pr-20" style="font-weight: 50;"> "We are surrounded by locked-in silos of health data. Whether that lock-in is due to vendors, complexity, skills shortages or just the sheer amount of data being generated doesn't matter. Our goal at DesAcc is to build and deliver solutions for addressing data lock-in, enabling access to health data wherever and however it is stored."</p>
 					<div id="credits" class="text-center md:text-left pt-4 ">
-						<h1 class='text-sm md:text-3xl'>Hugh Lyshkow</h1>
-						<p class='text-sm md:text-xl font-bold'>CEO, Co-Founder</p>
+						<h1 class='text-sm md:text-3xl' style="font-weight: 100;">Hugh Lyshkow</h1>
+						<p class='text-sm md:text-xl font-bold' style="font-weight: 100;">CEO, Co-Founder</p>
 					</div>
 				</div>
-				<div class="flex-1 p-4 px-8 md:px-0">
+				<div class="flex-1 p-4 px-8 md:px-0 mr-16 text-justify leading-none">
 					<h3 class="text-sm md:text-3xl pb-4">Services for Unlocking</h3>
 					<div class="text-[0.6rem] md:text-lg">
-						<p>Radiology Silos</p>
-						<p>xxx</p>
-						<br/>
-						<p>Pathology Silos</p>
-						<p>xxx</p>
-						<br/>
-						<p>Cardiology Silos</p>
-						<p>xxx</p>
-						<br/>
-						<p>Genomics Silos</p>
-						<p>xxx</p>
-						<br/>
-						<p>Document Silos</p>
-						<p>xxx</p>
-						<br/>
-						<p>Legacy Silos</p>
-						<p>xxx</p>
+						<p class="services_title">Radiology Silos</p>
+						<p class="services_body">PACS and VNA migrations (rapid media based, cloud and DICOM). Tech refreshes. RIS migrations. Tape and HSM migrations.</p>
+						<br />
+						<p class="services_title">Pathology Silos</p>
+						<p class="services_body">Proprietary to Whole Slide Imaging (WSI) DICOM. APLIS migrations. Gross anatomy and non-WSI to DICOM.</p>
+						<br />
+						<p class="services_title">Cardiology Silos</p>
+						<p class="services_body">CPACS and CVIS migrations. ECG to DICOM, including GE MUSE. Waveform to DICOM Encapsulated PDF (DEP).</p>
+						<br />
+						<p class="services_title">Document Silos</p>
+						<p class="services_body">File based migrations. Tivoli Storage Manager (TSM), DiskXtender and SAMfs. IHE Cross Enterprise Document Sharing (XDS).</p>
+						<br />
+						<p class="services_title">Report Silos</p>
+						<p class="services_body">Radiology, cardiology and pathology reports (text, rtf, word, pdf, html) to DICOM, HL7 and XDS.</p>
+						<br />
+						<p class="services_title">Legacy Silos</p>
+						<p class="services_body">Decommission legacy silos. Free up rack space used by legacy PACS and other storage systems. LTO tape extraction.</p>
 					</div>
 				</div>
-
-				<div class="flex-1 p-4 px-8 md:px-0">
+				<div class="flex-1 p-4 px-8 md:px-0 text-justify leading-none">
 					<h3 class="text-sm md:text-3xl pb-4">Software for Delivering</h3>
 					<div class="text-[0.6rem] md:text-lg">
-						<p>Data Discovery</p>
-						<p>xxx</p>
-						<br/>
-						<p>Data Quality</p>
-						<p>xxx</p>
-						<br/>
-						<p>Data Enrichment</p>
-						<p>xxx</p>
-						<br/>
-						<p>Data Delivery</p>
-						<p>xxx</p>
-						<br/>
-						<p>Data Integrity</p>
-						<p>xxx</p>
-						<br/>
-						<p>Data Lifecycle</p>
-						<p>xxx</p>
+						<p class="services_title">Data Discovery</p>
+						<p class="services_body">Analyze silos at the byte level. Understand what data you have and where, for RFP's, migrations or decommissioning legacy systems.</p>
+						<div style="height: 20px;"></div>
+						<p class="services_title">Data Quality</p>
+						<p class="services_body">Big Data is messy, understanding missing values, duplicates and clashed between silos is the first step towards better data.</p>
+						<div style="height: 20px;"></div>
+						<p class="services_title">Data for AI</p>
+						<p class="services_body">Better data means better AI models. Understand data quality, deliver data without impacting production environments.</p>
+						<div style="height: 20px;"></div>
+						<p class="services_title">Data Delivery</p>
+						<p class="services_body">Get your data where it needs to go, rapidly. Migration from legacy systems to new environments, to and from cloud-based storage.</p>
+						<div style="height: 20px;"></div>
+						<p class="services_title">Data for Cloud</p>
+						<p class="services_body">Enterprise engagements need the ability to move from on-prem to cloud and hybrid environments, efficiently and rapidly.</p>
+						<div style="height: 20px;"></div>
+						<p class="services_title">Data Lifecycle Management</p>
+						<p class="services_body">Understand how much of your data sits outside of retention rules. Filter unneeded data and tier data according to its age.</p>
 					</div>
-			
-				
+				</div>
 			</div>
 		</div>
 	</div>
@@ -333,6 +331,18 @@ import ScrollButton from '../components/ScrollButton.jsx';
 		}
 	}
 
+	.services_title {
+		font-weight: bold;
+		font-size: medium;
+		margin-bottom: 0.25rem; 
+	}
+
+	.services_body {
+		font-size: small;
+		margin-top: 0.25rem;
+    	line-height: 1.2;
+		margin-bottom: 2px;
+	}
 	
 </style>
 
