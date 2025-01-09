@@ -22,7 +22,7 @@ const Footer = () => {
     <footer className="border shadow-sm title-bg-image">
         <div className="container mx-auto flex flex-col md:flex-row justify-between py-8 px-20">
             <div className="flex-1 text-xs">
-                <h1 className="font-bold md:text-xl">Contact</h1>
+                <h1 className="font-bold md:text-xl">Location</h1>
                 <div className="mb-4 md:mb-0 md:py-4">
                     <h2>North America:</h2>
                     <p>Toronto</p>
@@ -44,7 +44,8 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex-1">
-                <h2 className="text-xs mb-4">Contact us to unlock all the possibilities of your data.</h2>
+                {/* <h2 className="text-xs mb-4">Contact us to unlock all the possibilities of your data.</h2> */}
+                <h1 className="font-bold md:text-xl pb-4">Contact</h1>
                 <form className="flex flex-col gap-2 text-xs" onSubmit={handleSubmit}>
                     <input
                         type="text"
