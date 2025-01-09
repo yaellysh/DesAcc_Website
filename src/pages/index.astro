@@ -13,13 +13,14 @@ import ScrollButton from '../components/ScrollButton.jsx';
 		<Navbar client:visible/>
 		<div class="flex flex-col md:flex-row p-4 md:py-12 items-stretch title-bg-image shadow-md">
 			<!-- Text Column -->
-			<div class="md:w-1/2 pl-10 md:pl-32 py-16 flex flex-col justify-between">
+			<div class="pl-10 md:ml-32 py-16 flex flex-col justify-between">
 			<div>
 				<!-- 36c76b -->
-					<h1 id="title" class="text-3xl md:text-[3vw] font-bold">
+					<h1 id="title" class="text-4xl md:text-5xl font-bold leading-tight">
 						Your Health Data. <span class="text-[#e36909]">Unlocked.</span>
 					</h1>
-					<p class="text-lg md:pt-6 md:text-[2vw] mb-2 text-gray-400 rotating-text" id="rotatingText"></p>
+
+					<p class="text-lg md:pt-4 md:text-[2vw] mb-2 text-gray-400 rotating-text" id="rotatingText"></p>
 					<p class="pr-12 md:pr-0 text-sm md:text-[1.5vw] md:leading-none md py-14 md:w-[30vw]">
 						Delivering continuity across health data environments in an ever increasing work of data complexity.
 					</p>
@@ -29,7 +30,7 @@ import ScrollButton from '../components/ScrollButton.jsx';
 				</div>
 			</div>
 			<!-- Image Column -->
-			<div id="title_image" class="md:w-[35vw] md:h-auto pt-12 flex items-end justify-center flex-col items-center justify-center">
+			<div id="title_image" class="md:w-[30vw] md:h-auto pt-12 flex items-end justify-left flex-col items-left">
 				<img src="/graphic.png" class="md:w-[60rem] lg:w-[50rem] mb-10" />
 			</div>
 		</div>
@@ -74,7 +75,7 @@ import ScrollButton from '../components/ScrollButton.jsx';
 						/>
 						<VendorCard 
 							name="Regional Healthcare Provider" 
-							imageSrc="/vendor_logos/hospital.png" 
+							imageSrc="/vendor_logos/rhcp.png" 
 							description={["100M+ Studies, 200+ Hospitals", "PACS/VNA"]}
 							location="North America"
 						/>
@@ -88,7 +89,7 @@ import ScrollButton from '../components/ScrollButton.jsx';
 					<div id="vendorGroup2" class="grid grid-cols-2 gap-1 md:gap-4 hidden"> 
 						<VendorCard 
 							name="Global Technology Vendor" 
-							imageSrc="/vendor_logos/global.png" 
+							imageSrc="/vendor_logos/world.png" 
 							description={["DICOM Platform Software Layer", "2000+ Cancer Centers"]}
 							location="Worldwide"
 						/>
@@ -100,13 +101,13 @@ import ScrollButton from '../components/ScrollButton.jsx';
 						/>
 						<VendorCard 
 							name="Partner Engagement" 
-							imageSrc="/vendor_logos/partner.png" 
+							imageSrc="/vendor_logos/doc.png" 
 							description={["Delivering IHE Standards", "Document delivery via XDS"]}
 							location="Europe"
 						/>
 						<VendorCard 
 							name="Radiology Service Vendor" 
-							imageSrc="/vendor_logos/radiology.png" 
+							imageSrc="/vendor_logos/rad svc.png" 
 							description={["PACS", "Cloud Centralization"]}
 							location="North America"
 						/>

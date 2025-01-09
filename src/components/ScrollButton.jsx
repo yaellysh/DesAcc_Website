@@ -33,7 +33,7 @@ const ScrollButton = () => {
     };
 
     return (
-        <button onClick={handleScrollDown} className="scroll-button p-2 bg-[#194b92] text-white text-xs md:text-[1rem] md:py-4 lg:text-[1.5rem] rounded hover:bg-[#6fc2b7] md:w-1/3">
+        <button onClick={handleScrollDown} className="scroll-button bg-[#194b92] text-white text-sm md:text-[1.5vw] md:text-[1rem] md:py-2 rounded hover:bg-[#6fc2b7] md:w-1/3">
             Dive In
         </button>
     );
