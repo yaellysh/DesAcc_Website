@@ -5,3 +5,8 @@
     background-position: top center; /* Aligns the image at the top center */
     background-repeat: no-repeat; /* Prevents tiling */
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  

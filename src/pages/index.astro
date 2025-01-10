@@ -11,7 +11,7 @@ import ScrollButton from '../components/ScrollButton.jsx';
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<div class="min-h-screen flex flex-col relative">
 		<Navbar client:visible/>
-		<div class="flex flex-col md:flex-row p-4 md:py-12 items-stretch title-bg-image shadow-md">
+		<div id="home" class="flex flex-col md:flex-row p-4 md:py-12 items-stretch title-bg-image shadow-md">
 			<!-- Text Column -->
 			<div class="pl-10 md:ml-32 py-16 flex flex-col justify-between">
 			<div>
@@ -35,7 +35,7 @@ import ScrollButton from '../components/ScrollButton.jsx';
 			</div>
 		</div>
 		
-		<div id="vendors" class="bs bg-opacity-100 z-20 relative shadow-md">
+		<div id="clients" class="bs bg-opacity-100 z-20 relative shadow-md">
 			<h1 class="mx-20 text-center font-bold text-xs md:text-xl text-[#194b92] pt-8 h-14 flex items-center justify-center">
 				<!-- Trusted by healthcare systems and vendors around the world for over 30 years. -->
 				TRUSTED BY HEALTHCARE SYSTEMS AND VENDORS AROUND THE WORLD FOR OVER 30 YEARS.
@@ -124,7 +124,7 @@ import ScrollButton from '../components/ScrollButton.jsx';
 		</div>
 
 		<!-- bg-[#f2f7f9]  -->
-		<div id="hdd" class="bg-opacity-100 z-20 relative pt-8 pb-16 shadow-md h-full">
+		<div id="services" class="bg-opacity-100 z-20 relative pt-8 pb-16 shadow-md h-full">
 			<h1 class="text-xl md:text-5xl px-12 md:px-32 font-bold pt-8 pb-4 md:pb-12 text-center text-[#194b92]">
 			  Designing Access to Health Data Discovery and Delivery
 			</h1>
@@ -141,8 +141,8 @@ import ScrollButton from '../components/ScrollButton.jsx';
 			  </div>
 		  
 			  <!-- Services Section -->
-			  <div class="flex-1 px-8 md:px-0 mr-16 leading-none flex flex-col justify-between h-full">
-				<h3 class="text-sm md:text-3xl pb-4 font-bold text-[#e3690a]">Services for Unlocking</h3>
+			  <div class="mt-8 md:mt-0 flex-1 px-8 md:px-0 md:mr-16 leading-none flex flex-col justify-between h-full">
+				<h3 class="text-center md:text-left text-xl md:text-3xl pb-4 font-bold text-[#e3690a]">Services for Unlocking</h3>
 				<div id="services" class="text-justify text-[0.6rem] md:text-lg flex-grow">
 				  <p class="services_title">Radiology Silos</p>
 				  <p class="services_body">PACS and VNA migrations (rapid media based, cloud and DICOM). Tech refreshes. RIS migrations. Tape and HSM migrations.</p>
@@ -160,8 +160,8 @@ import ScrollButton from '../components/ScrollButton.jsx';
 			  </div>
 		  
 			  <!-- Software Section -->
-			  <div class="flex-1 px-8 md:px-0 leading-none flex flex-col justify-between h-full">
-				<h3 class="text-sm md:text-3xl pb-4 font-bold text-[#e3690a]">Software for Delivering</h3>
+			  <div class="mt-8 md:mt-0 flex-1 px-8 md:px-0 leading-none flex flex-col justify-between h-full">
+				<h3 class="text-center md:text-left text-xl md:text-3xl pb-4 font-bold text-[#e3690a]">Software for Delivering</h3>
 				<div id="software" class="text-justify text-[0.6rem] md:text-lg flex-grow">
 				  <p class="services_title">Data Discovery</p>
 				  <p class="services_body">Analyze silos at the byte level. Understand what data you have and where, for RFP's, migrations or decommissioning legacy systems.</p>
@@ -336,6 +336,13 @@ import ScrollButton from '../components/ScrollButton.jsx';
 	.services_title {
 		font-weight: bold;
 		font-size: medium;
+	}
+
+	@media (max-width: 768px) {
+		.services_title {
+			font-size: small;
+			line-height: 1;
+		}
 	}
 
 	.services_body {

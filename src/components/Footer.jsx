@@ -36,6 +36,14 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex-1 text-xs">
+               <h1 className="font-bold md:text-xl">Navigate</h1>
+               <div className="mb-4 md:mb-0 md:py-4 flex flex-col">
+                    <a href="#home" className="hover:underline mb-2">Home</a>
+                    <a href="#clients" className="hover:underline mb-2">Clients</a>
+                    <a href="#services" className="hover:underline">Services and Software</a>
+                </div>
+            </div>
+            <div className="flex-1 text-xs">
                <h1 className="font-bold md:text-xl">Legal</h1>
                <div className="mb-4 md:mb-0 md:py-4 flex flex-col">
                     <a href="/privacy" className="hover:underline mb-2">Privacy Policy</a>
@@ -78,7 +86,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="bg-[#1c2531] text-white py-4">
-            <p className="text-sm text-center pb-4"> DesAcc® is a registered trademark of DesAcc EMEA Ltd. All other brands and product names mentioned here may be registered trademarks or trademarks of their respective holders and are used only for reference, where specifically needed, without any intent to infringe.</p>
+            <p className="mx-4 md:mx-0 text-xs md:text-sm text-center pb-4"> DesAcc® is a registered trademark of DesAcc EMEA Ltd. All other brands and product names mentioned here may be registered trademarks or trademarks of their respective holders and are used only for reference, where specifically needed, without any intent to infringe.</p>
         </div>
     </footer>
   );
