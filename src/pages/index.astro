@@ -3,44 +3,57 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.jsx';
 import VendorCard from '../components/VendorCard.astro';
 import Footer from '../components/Footer.jsx';
+import FooterTop from '../components/FooterTop.jsx';
 import ScrollButton from '../components/ScrollButton.jsx';
 ---
 
 
+
 <Layout>
+	<head>
+		<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+	</head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<div class="min-h-screen flex flex-col relative">
 		<Navbar client:visible/>
-		<div id="home" class="flex flex-col md:flex-row p-4 md:py-12 items-stretch title-bg-image shadow-md">
-			<!-- Text Column -->
-			<div class="pl-10 md:ml-32 py-16 flex flex-col justify-between">
-			<div>
-				<!-- 36c76b -->
-					<h1 id="title" class="text-4xl md:text-5xl font-bold leading-tight">
-						Your Health Data. <span class="text-[#e36909]">Unlocked.</span>
-					</h1>
+		<div id="home" class="w-full md:py-12 title-bg-image shadow-md"> <!-- Background div -->
 
-					<p class="text-lg md:pt-4 md:text-[2vw] mb-2 text-gray-400 rotating-text" id="rotatingText"></p>
-					<p class="pr-12 md:pr-0 text-sm md:text-[1.5vw] md:leading-none md py-14 md:w-[30vw]">
-						Delivering continuity across health data environments in an ever increasing work of data complexity.
-					</p>
+			<div class="flex flex-col md:flex-row mx-auto md:mx-20"> <!-- Content div -->
+
+			  <!-- Text Column -->
+			  <div class="pl-10 py-16 w-[90vw] flex flex-col">
+				<div>
+				  <h1 id="title" class="text-4xl md:text-5xl font-bold leading-tight">
+					Your Health Data. <span class="text-[#e36909]">Unlocked.</span>
+				  </h1>
+		  
+				  <p class="text-lg md:pt-2 md:text-[1.75vw] mb-2 text-gray-400 rotating-text" id="rotatingText"></p>
+				  <p class="pr-12 md:pr-0 text-sm md:text-[1.5vw] md:leading-none py-14 md:w-[30vw]">
+					Delivering continuity across health data environments in an ever increasing work of data complexity.
+				  </p>
 				</div>
 				<div>
-					<ScrollButton client:visible />
+				  <ScrollButton client:visible />
 				</div>
-			</div>
-			<!-- Image Column -->
-			<div id="title_image" class="md:w-[30vw] md:h-auto pt-12 flex items-end justify-left flex-col items-left">
+			  </div>
+
+
+			  <!-- Image Column -->
+			  <div id="title_image" class=" md:mr-20 md:h-auto pt-12 flex items-end justify-left flex-col items-left">
 				<img src="/graphic.png" class="md:w-[60rem] lg:w-[50rem] mb-10" />
-			</div>
-		</div>
+			  </div>
+
+			</div> <!-- Content div -->
+
+		  </div> <!-- Background div -->
+		  
 		
 		<div id="clients" class="bs bg-opacity-100 z-20 relative shadow-md">
-			<h1 class="mx-20 text-center font-bold text-xs md:text-xl text-[#194b92] pt-8 h-14 flex items-center justify-center">
-				<!-- Trusted by healthcare systems and vendors around the world for over 30 years. -->
-				TRUSTED BY HEALTHCARE SYSTEMS AND VENDORS AROUND THE WORLD FOR OVER 30 YEARS.
-
-			</h1>
+			<h1 class="mx-20 text-center font-bold text-xs md:text-2xl text-[#194b92] pt-8 h-14 flex items-center justify-center">
+				Trusted by healthcare systems and vendors around the world for over 30 years.
+			  </h1>
+			  
 			<div id="vendor_logos" class="grid grid-cols-2 md:gap-4 justify-center overflow-x-auto md:flex md:justify-center" style="justify-items: center;">
 				<img src="/vendor_logos/Ochsner Health System small.png" alt="Ochsner Health Logo" class="h-[6rem] md:h-[10rem] md:mx-[1rem]" />
 				<img src="/vendor_logos/Government of Western Australia small.png" alt="Western Australia Health Logo" class="h-[6rem] md:h-[10rem] md:mx-[1rem]" />
@@ -51,7 +64,7 @@ import ScrollButton from '../components/ScrollButton.jsx';
 
 		<div id="vendorSection" class="flex flex-col md:flex-row py-12 items-stretch h-full vendor-bg-image shadow-md">
 			<!-- Button column -->
-			<div id="toggleButton" class="flex items-center pl-12">
+			<div id="toggleButton" class="flex items-center pl-16">
 				<button  class="p-2 bg-gray-400 mr-4 text-white rounded">
 					←
 				</button>
@@ -62,7 +75,7 @@ import ScrollButton from '../components/ScrollButton.jsx';
 				<div id="vendorFrame" class="flex flex-col md:flex-row flex-grow">
 					<div id="vendorGroup1" class="grid grid-cols-2 gap-1 md:gap-4"> 
 						<VendorCard 
-							name="Ochsner Health" 
+							name="Ochsner Health"
 							imageSrc="/vendor_logos/Ochsner Health System.png" 
 							description={["Radiology/Cardiology", "20+ PACS Engagement"]}
 							location="North America"
@@ -74,9 +87,9 @@ import ScrollButton from '../components/ScrollButton.jsx';
 							location="APAC"
 						/>
 						<VendorCard 
-							name="Regional Healthcare Provider" 
+							name="Healthcare Provider" 
 							imageSrc="/vendor_logos/rhcp.png" 
-							description={["100M+ Studies, 200+ Hospitals", "PACS/VNA"]}
+							description={["100M+ Studies, 200+ Regional Hospitals", "PACS/VNA"]}
 							location="North America"
 						/>
 						<VendorCard 
@@ -123,65 +136,68 @@ import ScrollButton from '../components/ScrollButton.jsx';
 			</div>
 		</div>
 
-		<!-- bg-[#f2f7f9]  -->
+		<!-- Services Div -->
 		<div id="services" class="bg-opacity-100 z-20 relative pt-8 pb-16 shadow-md h-full">
 			<h1 class="text-xl md:text-5xl px-12 md:px-32 font-bold pt-8 pb-4 md:pb-12 text-center text-[#194b92]">
-			  Designing Access to Health Data Discovery and Delivery
+				Designing Access to Health Data Discovery and Delivery
 			</h1>
 			<div class="flex flex-col md:flex-row md:mx-32 h-full" style="align-items: stretch;">
-			  <!-- Quote Section -->
-			  <div id="hdd_col1" class="flex-1 md:w-1/4 flex flex-col justify-between">
-				<p class="text-center md:text-left text-sm md:text-[1.65rem] italic md:leading-none px-12 md:px-0 md:pr-20">
-				  "We are surrounded by locked-in silos of health data. Whether that lock-in is due to vendors, complexity, skills shortages, or just the sheer amount of data being generated doesn't matter. Our goal at DesAcc is to build and deliver solutions for addressing data lock-in, enabling access to health data wherever and however it is stored."
-				</p>
-				<div id="credits" class="text-center md:text-left mt-auto">
-				  <h1 class="text-sm md:text-3xl">Hugh Lyshkow</h1>
-				  <p class="text-sm md:text-xl font-bold">CEO, Co-Founder</p>
+				<!-- Quote Section -->
+				<div id="hdd_col1" class="flex-1 md:w-1/4 flex flex-col justify-between">
+					<p class="text-center md:text-left text-sm md:text-[1.65rem] italic md:leading-none px-12 md:px-0 md:pr-20 font-customSerif font-light">
+						"We are surrounded by locked-in silos of health data. Whether that lock-in is due to vendors, complexity, skills shortages, or just the sheer amount of data being generated doesn't matter. Our goal at DesAcc is to build and deliver solutions for addressing data lock-in, enabling access to health data wherever and however it is stored."
+					</p>
+						
+						
+					<div id="credits" class="text-center md:text-left mt-auto">
+						<h1 class="text-sm md:text-3xl">Hugh Lyshkow</h1>
+						<p class="text-sm md:text-xl font-bold">CEO, Co-Founder</p>
+					</div>
 				</div>
-			  </div>
-		  
-			  <!-- Services Section -->
-			  <div class="mt-8 md:mt-0 flex-1 px-8 md:px-0 md:mr-16 leading-none flex flex-col justify-between h-full">
-				<h3 class="text-center md:text-left text-xl md:text-3xl pb-4 font-bold text-[#e3690a]">Services for Unlocking</h3>
-				<div id="services" class="text-justify text-[0.6rem] md:text-lg flex-grow">
-				  <p class="services_title">Radiology Silos</p>
-				  <p class="services_body">PACS and VNA migrations (rapid media based, cloud and DICOM). Tech refreshes. RIS migrations. Tape and HSM migrations.</p>
-				  <p class="services_title">Pathology Silos</p>
-				  <p class="services_body">Proprietary to Whole Slide Imaging (WSI) DICOM. APLIS migrations. Gross anatomy and non-WSI to DICOM.</p>
-				  <p class="services_title">Cardiology Silos</p>
-				  <p class="services_body">CPACS and CVIS migrations. ECG to DICOM, including GE MUSE. Waveform to DICOM Encapsulated PDF (DEP).</p>
-				  <p class="services_title">Document Silos</p>
-				  <p class="services_body">File based migrations. Tivoli Storage Manager (TSM), DiskXtender and SAMfs. IHE Cross Enterprise Document Sharing (XDS).</p>
-				  <p class="services_title">Report Silos</p>
-				  <p class="services_body">Radiology, cardiology and pathology reports (text, rtf, word, pdf, html) to DICOM, HL7 and XDS.</p>
-				  <p class="services_title">Legacy Silos</p>
-				  <p class="services_body_last">Decommission legacy silos. Free up rack space used by legacy PACS and other storage systems. LTO tape extraction.</p>
+			
+				<!-- Services Section -->
+				<div class="mt-8 md:mt-0 flex-1 px-8 md:px-0 md:mr-16 leading-none flex flex-col justify-between h-full">
+					<h3 class="text-center md:text-left text-xl md:text-3xl pb-4 font-bold text-[#e3690a]">Services for Unlocking</h3>
+					<div id="services" class="text-justify text-[0.6rem] md:text-lg flex-grow">
+						<p class="services_title">Radiology Silos</p>
+						<p class="services_body">PACS and VNA migrations (rapid media based, cloud and DICOM). Tech refreshes. RIS migrations. Tape and HSM migrations.</p>
+						<p class="services_title">Pathology Silos</p>
+						<p class="services_body">Proprietary to Whole Slide Imaging (WSI) DICOM. APLIS migrations. Gross anatomy and non-WSI to DICOM.</p>
+						<p class="services_title">Cardiology Silos</p>
+						<p class="services_body">CPACS and CVIS migrations. ECG to DICOM, including GE MUSE. Waveform to DICOM Encapsulated PDF (DEP).</p>
+						<p class="services_title">Document Silos</p>
+						<p class="services_body">File based migrations. Tivoli Storage Manager (TSM), DiskXtender and SAMfs. IHE Cross Enterprise Document Sharing (XDS).</p>
+						<p class="services_title">Report Silos</p>
+						<p class="services_body">Radiology, cardiology and pathology reports (text, rtf, word, pdf, html) to DICOM, HL7 and XDS.</p>
+						<p class="services_title">Legacy Silos</p>
+						<p class="services_body_last">Decommission legacy silos. Free up rack space used by legacy PACS and other storage systems. LTO tape extraction.</p>
+					</div>
 				</div>
-			  </div>
-		  
-			  <!-- Software Section -->
-			  <div class="mt-8 md:mt-0 flex-1 px-8 md:px-0 leading-none flex flex-col justify-between h-full">
-				<h3 class="text-center md:text-left text-xl md:text-3xl pb-4 font-bold text-[#e3690a]">Software for Delivering</h3>
-				<div id="software" class="text-justify text-[0.6rem] md:text-lg flex-grow">
-				  <p class="services_title">Data Discovery</p>
-				  <p class="services_body">Analyze silos at the byte level. Understand what data you have and where, for RFP's, migrations or decommissioning legacy systems.</p>
-				  <p class="services_title">Data Quality</p>
-				  <p class="services_body">Big Data is messy, understanding missing values, duplicates, and clashes between silos is the first step towards better data.</p>
-				  <p class="services_title">Data for AI</p>
-				  <p class="services_body">Better data means better AI models. Understand data quality, deliver data without impacting production environments.</p>
-				  <p class="services_title">Data Delivery</p>
-				  <p class="services_body">Get your data where it needs to go, rapidly. Migration from legacy systems to new environments, to and from cloud-based storage.</p>
-				  <p class="services_title">Data for Cloud</p>
-				  <p class="services_body">Enterprise engagements need the ability to move from on-prem to cloud and hybrid environments, efficiently and rapidly.</p>
-				  <p class="services_title">Data Lifecycle Management</p>
-				  <p class="services_body_last">Understand how much of your data sits outside of retention rules. Filter unneeded data and tier data according to its age.</p>
+			
+				<!-- Software Section -->
+				<div class="mt-8 md:mt-0 flex-1 px-8 md:px-0 leading-none flex flex-col justify-between h-full">
+					<h3 class="text-center md:text-left text-xl md:text-3xl pb-4 font-bold text-[#e3690a]">Software for Delivering</h3>
+					<div id="software" class="text-justify text-[0.6rem] md:text-lg flex-grow">
+						<p class="services_title">Data Discovery</p>
+						<p class="services_body">Analyze silos at the byte level. Understand what data you have and where, for RFP's, migrations or decommissioning legacy systems.</p>
+						<p class="services_title">Data Quality</p>
+						<p class="services_body">Big Data is messy, understanding missing values, duplicates, and clashes between silos is the first step towards better data.</p>
+						<p class="services_title">Data for AI</p>
+						<p class="services_body">Better data means better AI models. Understand data quality, deliver data without impacting production environments.</p>
+						<p class="services_title">Data Delivery</p>
+						<p class="services_body">Get your data where it needs to go, rapidly. Migration from legacy systems to new environments, to and from cloud-based storage.</p>
+						<p class="services_title">Data for Cloud</p>
+						<p class="services_body">Enterprise engagements need the ability to move from on-prem to cloud and hybrid environments, efficiently and rapidly.</p>
+						<p class="services_title">Data Lifecycle Management</p>
+						<p class="services_body_last">Understand how much of your data sits outside of retention rules. Filter unneeded data and tier data according to its age.</p>
+					</div>
 				</div>
-			  </div>
 			</div>
-		  </div>
-		  
+		</div>
+		<!-- Services Div -->
 		  
 	</div>
+	<FooterTop />
 	<Footer />
 </Layout>
 

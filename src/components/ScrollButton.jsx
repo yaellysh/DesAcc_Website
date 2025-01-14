@@ -1,9 +1,9 @@
 import React from 'react';
 
 const ScrollButton = () => {
-    const handleScrollDown = () => {
-        const vendorsSection = document.getElementById('clients');
-        if (vendorsSection) {
+    const handleScrollDown = (targetId) => {
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
             const scrollTo = (element, duration) => {
                 const start = window.scrollY;
                 const end = element.getBoundingClientRect().top + start;
@@ -28,15 +28,24 @@ const ScrollButton = () => {
                 requestAnimationFrame(animation);
             };
 
-            scrollTo(vendorsSection, 1000);
+            scrollTo(targetSection, 1000);
         }
     };
 
     return (
-        <button onClick={handleScrollDown} className="scroll-button bg-[#194b92] text-white text-sm md:text-[1.5vw] md:text-[1rem] p-2 md:py-2 rounded hover:bg-[#6fc2b7] md:w-1/3">
-            Dive In
-        </button>
+        <div className="flex flex-row text-xs md:text-[1rem]">
+            <button 
+                onClick={() => handleScrollDown('clients')} 
+                className="scroll-button mr-4 bg-[#194b92] text-white  p-2 md:py-2 rounded hover:bg-[#6fc2b7] px-4">
+                Explore What's Possible
+            </button>
+            <button 
+                onClick={() => handleScrollDown('footer')} 
+                className="scroll-button border border-[#194b92] text-[#194b92] md:py-2 rounded hover:text-[#6fc2b7] hover:border-[#6fc2b7] px-4">
+                Contact Us
+            </button>
+        </div>
     );
 };
 
-export default ScrollButton; 
+export default ScrollButton;
