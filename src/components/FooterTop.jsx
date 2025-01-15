@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <footer id="footer" className="border shadow-sm title-bg-image">
-        <div className="flex md:flex-row justify-between py-8 md:px-32">
+        <div className="flex md:flex-row justify-between py-8 px-8 md:px-32">
             {/* <div> */}
                 <div className="flex-1 text-xs">
                     <h1 className="font-bold md:text-xl">Location</h1>

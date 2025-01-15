@@ -9,7 +9,7 @@ export interface Props {
 const { name, imageSrc, description, location } = Astro.props;
 ---
 
-<div class={`bg-white shadow-md rounded-lg p-2 md:p-10 md:m-1 w-full flex flex-col items-start md:min-h-[18rem]`}>
+<div class={`bg-white shadow-md rounded-lg p-2 md:p-10 md:m-1 w-[11rem] md:w-full flex flex-col items-start min-h-[10rem] md:min-h-[18rem]`}>
   {imageSrc && <img src={imageSrc} alt="Icon" class="h-[2rem] md:h-[3rem] mb-3" />}
   <h2 class="text-[0.6rem] md:text-xl font-semibold flex-grow">{name}</h2>
   {Array.isArray(description) && description.map((desc) => (
@@ -17,3 +17,4 @@ const { name, imageSrc, description, location } = Astro.props;
   ))}
   <p class="text-[0.6rem] md:text-lg font-bold">{location}</p>
 </div>
+
