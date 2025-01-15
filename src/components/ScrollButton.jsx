@@ -36,7 +36,7 @@ const ScrollButton = () => {
         <div className="flex flex-row text-xs md:text-[1rem]">
             <button 
                 onClick={() => handleScrollDown('clients')} 
-                className="scroll-button mr-4 bg-[#194b92] text-white  p-2 md:py-2 rounded hover:bg-[#6fc2b7] px-4">
+                className="scroll-button mr-4 bg-[#194b92] text-white p-2 md:py-2 rounded hover:bg-[#6fc2b7] px-4">
                 Explore What's Possible
             </button>
             <button 

@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <footer id="footer" className="border shadow-sm title-bg-image">
-        <div className="container flex  md:flex-row justify-between py-8 px-4 md:pl-32">
+        <div className="flex md:flex-row justify-between py-8 md:px-32">
             {/* <div> */}
                 <div className="flex-1 text-xs">
                     <h1 className="font-bold md:text-xl">Location</h1>
@@ -46,7 +46,7 @@ const Footer = () => {
                 <h1 className="font-bold md:text-xl">Legal</h1>
                 <div className="mb-4 md:mb-0 md:py-4 flex flex-col">
                         <a href="/privacy" className="hover:underline mb-2">Privacy Policy</a>
-                        <a href="/cookie-policy" className="hover:underline mb-2">Cookie Policy</a>
+                        <a href="/cookies" className="hover:underline mb-2">Cookie Policy</a>
                         <a href="/terms" className="hover:underline">Terms and Conditions</a>
                     </div>
                 </div>

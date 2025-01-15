@@ -1,0 +1,129 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
+---
+
+
+<Layout>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<div class="min-h-screen flex flex-col relative">
+		<Navbar client:visible/>
+		<div class="md:mx-32 md:mt-4 md:mb-12">
+			<h1 id="title" class="text-3xl md:text-4xl font-bold leading-tight md:pt-12">
+				Terms and Conditions
+			</h1>
+            <p class="text-xl font-bold uppercase mb-5 title">1.0 Glossary</p>
+            <table class="table-fixed text-left mb-5"> <thead class="font-bold uppercase"> <tr> <th class="border p-3">Term</th> <th class="border p-3">Definition</th> </tr> </thead> <tbody> <tr> <td class="border p-3">Cookie</td> <td class="border p-3">A website activity tracking tool used within an internet browser</td> </tr> </tbody> </table>
+            <p class="text-xl font-bold uppercase mb-5 title">2.0 Background</p>
+            <p class="mb-5">
+            2.1 DesAcc EMEA Ltd owns the DesAcc website, the content, data and
+                        services. You may access and use this website if you agree to be legally
+                        bound by the terms set out here. If you do not agree to be legally bound
+                        by these terms, please do not access and/or use the website.
+            </p>
+            <p class="text-xl font-bold uppercase mb-5 title">
+            3.0 Intellectual Property Rights
+            </p>
+            <p class="mb-5">
+            3.1 DesAcc EMEA Ltd owns or has the right to use all intellectual property
+                        rights in the contents of the website. This includes rights in copyright,
+                        patents, database rights, trademarks and other intellectual property
+                        rights. We reserve the right to alter, adapt, edit, modify or restrict the
+                        availability of Website Content at any time.
+            </p>
+            <p class="text-xl font-bold uppercase mb-5 title">4.0 Third-Party Websites</p>
+            <p class="mb-5">
+            4.1 We do not monitor the content of third-party websites or third-party
+                        applications. Any link provided on DesAcc.com or any of our other sites is
+                        solely for your convenience. We do not accept any responsibility for any
+                        third-party website or third-party applications.
+            </p>
+            <p class="mb-5">
+            4.2 Where we provide links to third-party websites or applications, that
+                        does not imply any association with or recommendation for those websites
+                        or applications.
+            </p>
+            <p class="text-xl font-bold uppercase mb-5 title">5.0 Our Liability</p>
+            <p class="mb-5">
+            5.1 We accept no liability to you should the DesAcc.com or any of our
+                        associated websites not be available at any particular time
+            </p>
+            <p class="mb-5">
+            5.2 We do not accept any liability to you for any of the following types
+                        of loss or damage (which you may suffer as a result of your use of our
+                        website) whether the losses were foreseen, foreseeable, unforeseen,
+                        unforeseeable, known, unknown or otherwise:
+            </p>
+            <ul class="list-disc list-inside ml-5 mb-5"> <li>
+            A loss which arose when you first accessed the website, or any of our
+                            linked sites and services, (even if that loss results from our failure
+                            to comply with these terms or our negligence)
+            </li> <li>
+            Any business loss you may suffer, including loss of revenue, loss of
+                            profits or loss of anticipated savings (whether those losses are the
+                            direct or indirect result of our default)
+            </li> <li>
+            A loss which you suffer other than as a result of our failure to comply
+                            with these terms or our negligence or breach of statutory duty
+            </li> <li>Any loss suffered due to the default of any party other than us.</li> </ul>
+            <p class="mb-5">
+            5.3 We do not warrant that the website or any content will be available
+                        uninterrupted or error-free, that defects will be corrected, or that
+                        DesAcc or its supporting systems are free of viruses or bugs.
+            </p>
+            <p class="mb-5">
+            5.4 We do not accept any liability to you if we fail or are interrupted or
+                        delayed in the performance of any obligation because of:
+            </p>
+            <ul class="list-disc list-inside ml-5 mb-5"> <li>
+            The non-availability or failure of any telecommunications or computer
+                            services, systems, equipment or software operated or provided by you or
+                            any third party
+            </li> <li>Any other event not reasonably within our control.</li> </ul>
+            <p class="mb-5">
+            5.5 We do not give any commitments or accept any liability to you in
+                        respect of content provided by other users of the website or third parties
+            </p>
+            <p class="mb-5">
+            5.6 Terms set out here should be read in conjunction with our Cookie and
+                        Data Privacy Policies. You acknowledge and agree that we will not be
+                        responsible for any injury, loss or damage (whether direct or indirect)
+                        arising out of, or relating to the misuse of, or inappropriate reliance on
+                        the contents or advice provided via an external link on this website,
+                        except to the extent that such liability cannot be limited or excluded by
+                        law.
+            </p>
+            <p class="text-xl font-bold uppercase mb-5 title">
+            6.0 Attacks, Unauthorised access and other violations
+            </p>
+            <p class="mb-5">
+            6.1 You must not try to gain unauthorised access to our website, our
+                        services, the servers on which they’re stored, or any server, computer or
+                        database connected to them. You must not attack the services in any way,
+                        (this includes denial-of-service attacks). We’ll report any attacks or
+                        attempts to gain unauthorised access to the site or service to the
+                        relevant law enforcement authorities and shall share information about you
+                        with them.
+            </p>
+            <p class="text-xl font-bold uppercase mb-5 title">7.0 Revision of policy</p>
+            <p class="mb-5">
+            7.1 This Policy was last updated in August 2020. If we change our Policy,
+                        we will post the details of any changes here. We may also take reasonable
+                        steps to notify you when you visit our website.
+            </p>
+		</div>
+
+		
+	</div>
+	<Footer />
+</Layout>
+
+<style>
+	.title {
+		margin-top: 2rem;
+	}
+	
+</style>
+
+
