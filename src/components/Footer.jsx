@@ -19,7 +19,7 @@ const FooterTop = () => {
   return (
     <footer id="footer" className="border shadow-sm title-bg-image">
         <div className="bg-[#1c2531] text-white py-4 md:px-8">
-            <p className="mx-4 md:mx-0 text-xs md:text-[0.75rem] text-center pb-4"> DesAcc® is a registered trademark of DesAcc EMEA Ltd. All other brands and product names mentioned here may be registered trademarks or trademarks of their respective holders and are used only for reference, where specifically needed, without any intent to infringe.</p>
+            <p className="mx-4 md:mx-0 text-xs md:text-sm text-center pb-4"> DesAcc® is a registered trademark of DesAcc EMEA Ltd. All other brands and product names mentioned here may be registered trademarks or trademarks of their respective holders and are used only for reference, where specifically needed, without any intent to infringe.</p>
         </div>
     </footer>
 
