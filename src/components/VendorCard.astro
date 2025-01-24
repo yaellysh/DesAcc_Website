@@ -9,12 +9,12 @@ export interface Props {
 const { name, imageSrc, description, location } = Astro.props;
 ---
 
-<div class={`bg-white shadow-md rounded-lg p-2 md:p-10 md:m-1 w-[11rem] md:w-full flex flex-col items-start min-h-[10rem] md:min-h-[20rem]`}>
-  {imageSrc && <img src={imageSrc} alt="Icon" class="h-[2rem] md:h-[3rem] mb-3" />}
-  <h2 class="text-[0.6rem] md:text-xl font-semibold flex-grow">{name}</h2>
+<div class={`bg-white shadow-md rounded-lg p-2 md:p-10 md:m-1 w-[11rem] md:w-full flex flex-col items-start min-h-[10rem] md:min-h-[20rem] 3xl:min-h-[30rem]`}>
+  {imageSrc && <img src={imageSrc} alt="Icon" class="h-[2rem] md:h-[3rem] 3xl:h-[5rem] mb-3" />}
+  <h2 class="text-[0.6rem] 3xl:text-3xl md:text-xl font-semibold flex-grow">{name}</h2>
   {Array.isArray(description) && description.map((desc) => (
-    <p class="text-[0.6rem] md:text-sm flex-grow">{desc}</p>
+    <p class="text-[0.6rem] 3xl:text-3xl md:text-sm flex-grow">{desc}</p>
   ))}
-  <p class="text-[0.6rem] md:text-lg font-bold">{location}</p>
+  <p class="text-[0.6rem] 3xl:text-3xl md:text-lg font-bold">{location}</p>
 </div>
 

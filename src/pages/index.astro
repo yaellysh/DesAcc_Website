@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar.jsx';
 import VendorCard from '../components/VendorCard.astro';
 import Footer from '../components/Footer.jsx';
 import FooterTop from '../components/FooterTop.jsx';
-import ScrollButton from '../components/ScrollButton.jsx';
+import ScrollButtons from '../components/ScrollButtons.jsx';
 ---
 
 
@@ -19,29 +19,29 @@ import ScrollButton from '../components/ScrollButton.jsx';
 		<Navbar client:visible/>
 		<div id="home" class="w-full title-bg-image shadow-md"> <!-- Background div -->
 
-			<div class="flex flex-col md:py-12 md:flex-row mx-auto md:mx-20"> <!-- Content div -->
+			<div class="flex flex-col md:py-12 2xl:py-32  md:flex-row mx-auto md:mx-20 2xl:mx-36"> <!-- Content div -->
 
 			  <!-- Text Column -->
 			  <div class="pl-10 py-16 w-[90vw] flex flex-col">
 				<div>
-					<h1 id="title" class="text-4xl md:text-5xl font-bold leading-tight">
+					<h1 id="title" class="text-4xl md:text-5xl 2xl:text-6xl 3xl:text-7xl font-bold leading-tight">
 						Your Health Data. <span class="text-[#e36909]">Unlocked.</span>
 					</h1>
 			
-					<p class="text-lg md:pt-2 md:text-[1.75vw] mb-2 text-gray-400 rotating-text" id="rotatingText"></p>
-					<p class="pr-12 md:pr-0 text-sm md:text-[1.5vw] md:leading-none py-14 md:w-[30vw]">
-						Delivering continuity across health data environments in a world of ever increasing data complexity.
+					<p class="text-lg md:pt-2 2xl:pt-4 md:text-[1.75vw] 3xl:text-5xl mb-2 text-gray-400 rotating-text" id="rotatingText"></p>
+					<p class="pr-12 md:pr-0 text-sm md:text-[1.5vw] md:leading-none py-14 md:w-[30vw] 3xl:text-4xl 3xl:my-16">
+						Delivering continuity across health data environments in a world of ever-increasing data complexity.
 					</p>
 				</div>
 				<div>
-				  <ScrollButton client:visible />
+				  <ScrollButtons client:visible />
 				</div>
 			  </div>
 
 
 			  <!-- Image Column -->
 			  <div id="title_image" class="w-[95%] flex items-end justify-left flex-col items-left">
-				<img src="/graphic.png" class="md:w-[70rem] mb-10" />
+				<img src="/graphic.png" class="md:w-[70rem] 3xl:w-[100rem] mb-10" />
 			  </div>
 
 			</div> <!-- Content div -->
@@ -49,16 +49,16 @@ import ScrollButton from '../components/ScrollButton.jsx';
 		  </div> <!-- Background div -->
 		  
 		
-		<div id="clients" class="bs bg-opacity-100 z-20 relative shadow-md">
-			<h1 class="mx-20 text-center font-bold text-xs md:text-2xl text-[#194b92] pt-8 h-14 flex items-center justify-center">
+		<div id="clients" class="bs bg-opacity-100 z-20 relative shadow-md 3xl:py-16">
+			<h1 class="mx-20 text-center font-bold text-xs md:text-2xl text-[#194b92] pt-8 h-14 flex items-center justify-center 3xl:text-4xl">
 				Trusted by healthcare systems and vendors around the world for over 30 years.
 			  </h1>
 			  
 			<div id="vendor_logos" class="grid grid-cols-2 md:gap-4 justify-center overflow-x-auto md:flex md:justify-center" style="justify-items: center;">
-				<img src="/vendor_logos/Ochsner Health System small.png" alt="Ochsner Health Logo" class="h-[6rem] md:h-[10rem] md:mx-[1rem]" />
-				<img src="/vendor_logos/Government of Western Australia small.png" alt="Western Australia Health Logo" class="h-[6rem] md:h-[10rem] md:mx-[1rem]" />
-				<img src="/vendor_logos/Standford Health Care small.png" alt="Standford Health Care Logo" class="h-[6rem] md:h-[10rem] md:mx-[1rem]" />
-				<img src="/vendor_logos/Lameris_logo.png" alt="Lameris Logo" class="h-[6rem] md:h-[8rem] py-6 md:mx-[1rem] md:my-[1.5rem]" />
+				<img src="/vendor_logos/Ochsner Health System small.png" alt="Ochsner Health Logo" class="h-[6rem] md:h-[10rem] md:mx-[1rem] 3xl:h-[14rem]" />
+				<img src="/vendor_logos/Government of Western Australia small.png" alt="Western Australia Health Logo" class="h-[6rem] md:h-[10rem] 3xl:h-[14rem] md:mx-[1rem]" />
+				<img src="/vendor_logos/Standford Health Care small.png" alt="Standford Health Care Logo" class="h-[6rem] md:h-[10rem] 3xl:h-[14rem] md:mx-[1rem]" />
+				<img src="/vendor_logos/Lameris_logo.png" alt="Lameris Logo" class="h-[6rem] md:h-[8rem] 3xl:h-[11rem] py-6 md:mx-[1rem] md:my-[1.5rem]" />
 			</div>
 		</div>
 
@@ -206,7 +206,8 @@ import ScrollButton from '../components/ScrollButton.jsx';
 		"Enabling cloud deployment.",
 		"Empowering healthcare innovation.",
 		"Transforming data into insights.",
-		"Connecting health systems globally."
+		"Connecting health systems globally.",
+		"Enabling AI Readiness."
 	];
 
 	let index = 0;
