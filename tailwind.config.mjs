@@ -8,7 +8,7 @@ export default {
 			  },
 			  fontFamily: {
 				albert: ['"Albert Sans"', 'sans-serif'],
-				customSerif: ['"Merriweather"', 'serif'],     
+				customSerif: ['"Cormorant Garamond"', 'serif'],     
 			  },
 			  screens: {
 				'3xl': '1920px',

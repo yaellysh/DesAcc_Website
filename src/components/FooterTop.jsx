@@ -39,7 +39,8 @@ const Footer = () => {
                 <div className="mb-4 md:mb-0 md:py-4 flex flex-col">
                         <a href="#home" className="hover:underline mb-2">Home</a>
                         <a href="#clients" className="hover:underline mb-2">Clients</a>
-                        <a href="#services" className="hover:underline">Services and Software</a>
+                        <a href="#services" className="hover:underline mb-2">Services</a>
+                        <a href="#services" className="hover:underline">Software</a>
                     </div>
                 </div>
                 <div className="flex-1 text-xs">
@@ -79,7 +80,7 @@ const Footer = () => {
                     ></textarea>
                     <button
                         type="submit"
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded"
+                        className="bg-[#194b92] border border-[#194b92] text-white py-1 px-2 rounded hover:bg-white hover:text-[#194b92] hover:border-[#194b92]"
                     >
                         Send Message
                     </button>

@@ -36,12 +36,12 @@ const ScrollButtons = () => {
         <div className="flex flex-row text-xs md:text-[1rem] 3xl:text-3xl">
             <button 
                 onClick={() => handleScrollDown('clients')} 
-                className="scroll-button mr-4 bg-[#194b92] text-white p-2 md:py-2 3xl:p-4 rounded hover:bg-[#6fc2b7] px-4">
+                className="scroll-button mr-4 bg-[#194b92] border border-[#194b92] text-white p-2 md:py-2 3xl:p-4 rounded hover:bg-white hover:text-[#194b92] hover:border-[#194b92] px-4">
                 Explore What's Possible
             </button>
             <button 
                 onClick={() => handleScrollDown('footer')} 
-                className="scroll-button border border-[#194b92] text-[#194b92] md:py-2 3xl:p-4 rounded hover:text-[#6fc2b7] hover:border-[#6fc2b7] px-4">
+                className="scroll-button border border-[#194b92] text-[#194b92] hover:bg-[#194b92] md:py-2 3xl:p-4 rounded hover:text-white px-4">
                 Contact Us
             </button>
         </div>
