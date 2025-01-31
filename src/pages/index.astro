@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.jsx';
+import Navbar_main from '../components/Navbar_main.jsx';
 import VendorCard from '../components/VendorCard.astro';
 import Footer from '../components/Footer.jsx';
 import FooterTop from '../components/FooterTop.jsx';
@@ -14,12 +14,12 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 		<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Caslon+Display&family=Numans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Caslon+Display&family=Numans&family=Shippori+Mincho&display=swap" rel="stylesheet">
 	</head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<div class="min-h-screen flex flex-col relative">
-		<Navbar client:visible/>
+		<Navbar_main client:visible/>
 		<div id="home" class="w-full title-bg-image shadow-md"> <!-- Background div -->
 
 			<div class="flex flex-col md:py-12 2xl:py-32  md:flex-row mx-auto md:mx-20 2xl:mx-36"> <!-- Content div -->
@@ -148,8 +148,8 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 				<!-- Quote Section -->
 				<div id="hdd_col1" class="flex-1 md:w-1/4 flex flex-col">
 					<h3 class="text-center md:text-left text-xl md:text-3xl 2xl:text-4xl 3xl:text-5xl pb-4 font-bold text-[#e3690a]">Discovery and Delivery</h3>
-					<p class="text-center md:text-left text-sm md:text-3xl 2xl:text-4xl 3xl:text-5xl italic md:leading-none px-12 md:px-0 md:pr-20 font-customSerif">
-						"“Our mission at DesAcc is to develop software and deliver focused expertise that breaks down barriers to health data utilization, ensuring healthcare practitioners and AI models can access the information needed to deliver the best data-driven decisions possible.”"
+					<p class="shippori-mincho-regular text-center md:text-left text-sm md:text-3xl 2xl:text-4xl 3xl:text-5xl italic md:leading-none px-12 md:px-0 md:pr-20">
+						"Our mission at DesAcc is to develop software and deliver focused expertise that breaks down barriers to health data utilization, ensuring healthcare practitioners and AI models can access the information needed to deliver the best data-driven decisions possible."
 					</p>
 						
 						
@@ -415,5 +415,11 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
       	line-height: 1.6;
 	}
   }
+
+	.shippori-mincho-regular {
+		font-family: "Shippori Mincho", serif;
+		font-weight: 100;
+		font-style: normal;
+	}
 </style>
 

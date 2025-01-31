@@ -8,12 +8,13 @@ export default {
 			  },
 			  fontFamily: {
 				albert: ['"Albert Sans"', 'sans-serif'],
-				customSerif: ['"Cormorant Garamond"', 'serif'],     
+				customSerif: ['"Numans"', 'serif'],     
 			  },
 			  screens: {
 				'3xl': '1920px',
 				'4xl': '2560px',
 			  },
+			  
 		}
 	},
 	plugins: [],
