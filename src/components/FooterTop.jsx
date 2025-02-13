@@ -21,8 +21,8 @@ const Footer = () => {
         <div className="flex md:flex-row justify-between py-8 px-8 md:px-32">
             {/* <div> */}
                 <div className="flex-1 text-xs 2xl:text-xl">
-                    <h1 className="font-bold md:text-xl 2xl:text-3xl 3xl:text-4xl">Location</h1>
-                    <div className="mb-4 md:mb-0 md:py-4">
+                    <h1 className="font-bold md:text-xl 2xl:text-2xl">Location</h1>
+                    <div className="mb-4 md:mb-0 md:py-4 md:text-sm">
                         <h2>North America:</h2>
                         <p>Toronto</p>
                         <p>M5E 1J8</p>
@@ -35,8 +35,8 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="flex-1 text-xs md:block hidden 2xl:text-xl">
-                <h1 id="navigate" className="font-bold md:text-xl 2xl:text-3xl 3xl:text-4xl ">Navigate</h1>
-                <div className="mb-4 md:mb-0 md:py-4 flex flex-col">
+                <h1 id="navigate" className="font-bold md:text-xl 2xl:text-2xl ">Navigate</h1>
+                <div className="mb-4 md:mb-0 md:py-4 flex flex-col md:text-sm">
                         <a href="#home" className="hover:underline mb-2">Home</a>
                         <a href="#clients" className="hover:underline mb-2">Clients</a>
                         <a href="#services" className="hover:underline mb-2">Services</a>
@@ -44,8 +44,8 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="flex-1 text-xs 2xl:text-xl">
-                <h1 className="font-bold md:text-xl 2xl:text-3xl 3xl:text-4xl">Legal</h1>
-                <div className="mb-4 md:mb-0 md:py-4 flex flex-col">
+                <h1 className="font-bold md:text-xl 2xl:text-2xl">Legal</h1>
+                <div className="mb-4 md:mb-0 md:py-4 flex flex-col md:text-sm">
                         <a href="/privacy" className="hover:underline mb-2">Privacy Policy</a>
                         <a href="/cookies" className="hover:underline mb-2">Cookie Policy</a>
                         <a href="/terms" className="hover:underline">Terms and Conditions</a>
@@ -55,8 +55,8 @@ const Footer = () => {
             
             <div className="flex-1">
                 {/* <h2 className="text-xs mb-4">Contact us to unlock all the possibilities of your data.</h2> */}
-                <h1 className="font-bold text-xs md:text-xl pb-2 md:pb-4 2xl:text-3xl 3xl:text-4xl">Contact</h1>
-                <form className="flex flex-col gap-2 text-xs 2xl:text-xl" onSubmit={handleSubmit}>
+                <h1 className="font-bold text-xs md:text-xl pb-2 md:pb-4 2xl:text-2xl">Contact</h1>
+                <form className="flex flex-col gap-2 text-xs md:text-sm" onSubmit={handleSubmit}>
                     <input
                         type="text"
                         placeholder="Name"

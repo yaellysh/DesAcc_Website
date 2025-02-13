@@ -7,8 +7,6 @@ import FooterTop from '../components/FooterTop.jsx';
 import ScrollButtons from '../components/ScrollButtons.jsx';
 ---
 
-
-
 <Layout>
 	<head>
 		<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -65,7 +63,7 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 			</div>
 		</div>
 
-		<div id="vendorSection" class="flex flex-col md:flex-row py-12 items-stretch h-full vendor-bg-image shadow-md">
+		<div id="vendorSection" class="flex flex-col lg:flex-row py-12 items-stretch h-full vendor-bg-image shadow-md">
 			<!-- Button column -->
 			<div id="toggleButton" class="flex items-center pl-16">
 				<button  class="p-2 bg-gray-400 mr-4 text-white rounded">
@@ -74,8 +72,8 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 			</div>
 
 			<!-- Vendor card column -->
-			<div class="flex flex-col md:w-[50em] lg:w-[90em] items-center">
-				<div id="vendorFrame" class="flex flex-col md:flex-row flex-grow">
+			<div class="flex flex-col lg:w-[70em] xl:w-[90em] items-center">
+				<div id="vendorFrame" class="flex flex-col lg:flex-row flex-grow">
 					<div id="vendorGroup1" class="grid grid-cols-2 gap-1 md:gap-4"> 
 						<VendorCard 
 							name="Ochsner Health"
@@ -90,7 +88,7 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 							location="APAC"
 						/>
 						<VendorCard 
-							name="Stanford Healthcare" 
+							name="Stanford Health Care" 
 							imageSrc="/vendor_logos/Standford Health Care.png" 
 							description={["APLIS/PACS", "Non-WSI Pathology"]}
 							location="North America"
@@ -134,37 +132,36 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 			<!-- Text column -->
 			<div class="flex items-center justify-center  px-12">
 				<p class="pt-12 text-center text-sm md:text-3xl 2xl:4xl md:mx-4 text-left">
-					We facilitate and deliver data-driven software and solutions for health service vendors and healthcare enterprises at petabyte scale, globally. 
-				</p>
+					We deliver data-driven software and services to healthcare enterprises and vendors worldwide, providing complete data control at the petabyte scale.
 			</div>
 		</div>
 
 		<!-- Services Div -->
-		<div id="services" class="bg-opacity-100 z-20 relative pt-8 pb-16 shadow-md h-full">
+		<div id="services" class="bg-opacity-100 z-20 relative pt-8 pb-24 shadow-md h-full">
 			<h1 class="text-xl md:text-5xl 2xl:text-6xl 3xl:text-7xl px-12 md:px-32 font-bold pt-8 pb-4 md:pb-12 2xl:pb-20 text-center text-[#194b92]">
 				Designing Access to Health Data 
 			</h1>
-			<div class="flex flex-col md:flex-row md:mx-32 h-full" style="align-items: stretch;">
+			<div class="flex flex-col lg:flex-row md:mx-32 h-full" style="align-items: stretch;">
 				<!-- Quote Section -->
-				<div id="hdd_col1" class="flex-1 md:w-1/4 flex flex-col">
-					<h3 class="text-center md:text-left text-xl md:text-3xl 2xl:text-4xl 3xl:text-5xl pb-4 font-bold text-[#e3690a]">Discovery and Delivery</h3>
-					<p class="shippori-mincho-regular text-center md:text-left text-sm md:text-3xl 2xl:text-4xl 3xl:text-5xl italic md:leading-none px-12 md:px-0 md:pr-20">
+				<div id="hdd_col1" class="flex-1 lg:w-1/4 flex flex-col">
+					<h3 class="text-center lg:text-left text-xl md:text-3xl 2xl:text-4xl 3xl:text-5xl pb-4 font-bold text-[#e3690a]">Discovery and Delivery</h3>
+					<p class="shippori-mincho-regular text-center lg:text-left text-sm md:text-2xl 2xl:text-3xl 3xl:text-4xl italic md:leading-none px-12 lg:px-0 lg:pr-20">
 						"Our mission at DesAcc is to develop software and deliver focused expertise that breaks down barriers to health data utilization, ensuring healthcare practitioners and AI models can access the information needed to deliver the best data-driven decisions possible."
 					</p>
 						
 						
-					<div id="credits" class="text-center md:text-left mt-auto pt-4 md:pt-0">
+					<div id="credits" class="text-center lg:text-left mt-auto pt-4 lg:pt-0">
 						<h1 class="text-sm md:text-3xl">Hugh Lyshkow</h1>
 						<p class="text-sm md:text-xl font-bold">CEO, Co-Founder</p>
 					</div>
 				</div>
 			
 				<!-- Services Section -->
-				<div class="mt-8 md:mt-0 flex-1 px-8 md:px-0 md:mr-16 leading-none flex flex-col justify-between h-full">
-					<h3 class="text-center md:text-left text-xl md:text-3xl 2xl:text-4xl 3xl:text-5xl pb-4 font-bold text-[#e3690a]">Services for Unlocking</h3>
+				<div class="mt-8 lg:mt-0 flex-1 px-8 md:px-0 lg:mr-16 leading-none flex flex-col justify-between h-full">
+					<h3 class="text-center lg:text-left text-xl md:text-3xl 2xl:text-4xl 3xl:text-5xl pb-4 font-bold text-[#e3690a]">Services for Unlocking</h3>
 					<div id="services" class="text-justify text-[0.6rem] md:text-lg flex-grow">
 						<p class="services_title">Radiology Silos</p>
-						<p class="services_body">PACS and VNA migrations (rapid media based, cloud and DICOM). Tech refreshes. RIS migrations. Tape and HSM migrations.</p>
+						<p class="services_body">PACS and VNA migrations (rapid media-based, cloud and DICOM). Tech refreshes. RIS migrations. Tape and HSM migrations.</p>
 						<p class="services_title">Pathology Silos</p>
 						<p class="services_body">Proprietary to Whole Slide Imaging (WSI) DICOM. APLIS migrations. Gross anatomy and non-WSI to DICOM.</p>
 						<p class="services_title">Cardiology Silos</p>
@@ -179,8 +176,8 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 				</div>
 			
 				<!-- Software Section -->
-				<div class="mt-8 md:mt-0 flex-1 px-8 md:px-0 leading-none flex flex-col justify-between h-full">
-					<h3 class="text-center md:text-left text-xl md:text-3xl pb-4 2xl:text-4xl 3xl:text-5xl  font-bold text-[#e3690a]">Software for Delivering</h3>
+				<div class="mt-8 lg:mt-0 flex-1 px-8 md:px-0 leading-none flex flex-col justify-between h-full">
+					<h3 class="text-center lg:text-left text-xl md:text-3xl pb-4 2xl:text-4xl 3xl:text-5xl  font-bold text-[#e3690a]">Software for Delivering</h3>
 					<div id="software" class="text-justify text-[0.6rem] md:text-lg flex-grow">
 						<p class="services_title">Data Discovery</p>
 						<p class="services_body">Analyze silos at the byte level. Discover what data you have and where it is located for RFPs, migrations, or decommissioning legacy systems.</p>
@@ -211,7 +208,7 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 		"Empowering healthcare innovation.",
 		"Transforming data into insights.",
 		"Connecting health systems globally.",
-		"Enabling AI Readiness."
+		"Enabling AI readiness."
 	];
 
 	let index = 0;
@@ -349,9 +346,7 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 		#title_image {
 			display: flex;
 		}
-		#toggleButton {
-			display: flex;
-		}
+		
 	}
 
 	.services_title {
@@ -363,6 +358,12 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 		.services_title {
 			font-size: small;
 			line-height: 1;
+		}
+	}
+
+	@media (min-width: 1023px) {
+		#toggleButton {
+			display: flex;
 		}
 	}
 
@@ -386,6 +387,13 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
     }
     .services_body {
       font-size: small;
+	  margin-top: 0.25rem;
+      line-height: 1.2;
+	  margin-bottom: 1rem;
+    }
+
+	.services_body {
+      font-size: small;
       line-height: 1.2;
     }
   }
@@ -399,6 +407,13 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
       font-size: medium;
       line-height: 1.4;
     }
+
+	.services_body_last {
+      font-size: medium;
+      line-height: 1.4;
+    }
+
+	
   }
 
   @media (min-width: 2001px) {
