@@ -34,11 +34,11 @@ const Navbar_main = () => {
           <img src="/lines.png" alt="Icon" className="h-[2rem] md:h-[3rem] 2xl:h-[4rem]" />
         </button>
         {isDropdownOpen && (
-          <div className="absolute right-0 w-64 3xl:w-96 h-auto rounded text-white shadow-lg z-50 bg-[#194b92]">
-            <a href="#clients" className="border 3xl:text-3xl border-[#123b73] 2xl:p-4 block px-4 py-2 hover:bg-[#123b73]">Clients</a>
-            <a href="#services" className="border 3xl:text-3xl border-[#123b73] 2xl:p-4 block px-4 py-2 hover:bg-[#123b73]">Services</a>
-            <a href="#services" className="border 3xl:text-3xl border-[#123b73] 2xl:p-4 block px-4 py-2 hover:bg-[#123b73]">Software</a>
-            <a href="#footer" className="border 3xl:text-3xl border-[#123b73] 2xl:p-4 block px-4 py-2 hover:bg-[#123b73]">Contact Us</a>
+          <div className="absolute right-0 w-64 3xl:w-80 h-auto text-white border border-[#123b73] shadow-lg z-50 ">
+            <a href="#clients" className=" 3xl:text-3xl block px-4 py-2 bg-[#194b92] hover:bg-transparent hover:text-[#194b92]">Clients</a>
+            <a href="#services" className=" 3xl:text-3xl block px-4 py-2 bg-[#194b92] hover:bg-transparent hover:text-[#194b92]">Services</a>
+            <a href="#services" className=" 3xl:text-3xl block px-4 py-2 bg-[#194b92]  hover:bg-transparent hover:text-[#194b92]">Software</a>
+            <a href="#footer" className=" 3xl:text-3xl block px-4 py-2 bg-[#194b92] hover:bg-transparent hover:text-[#194b92]">Contact Us</a>
           </div>
         )}
       </div>
