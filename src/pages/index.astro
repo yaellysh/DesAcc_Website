@@ -12,15 +12,16 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 		<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Caslon+Display&family=Numans&family=Shippori+Mincho&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Caslon+Display&family=Numans&family=Shippori+Mincho&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/skz6tog.css">
 	</head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<div class="min-h-screen flex flex-col relative">
 		<Navbar_main client:visible/>
 		<div id="home" class="w-full title-bg-image shadow-md"> <!-- Background div -->
 
-			<div class="flex flex-col md:py-12 2xl:py-32  md:flex-row mx-auto md:mx-20 2xl:mx-36"> <!-- Content div -->
+			<div class="flex flex-col md:py-12 2xl:py-32 md:flex-row mx-12 md:mx-20 2xl:mx-36"> <!-- Content div -->
 
 			  <!-- Text Column -->
 			  <div class="pl-10 py-16 w-[90vw] flex flex-col">
@@ -29,8 +30,8 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 						Your Health Data. <span class="text-[#e36909]">Unleashed.</span>
 					</h1>
 			
-					<p class="text-lg md:pt-2 2xl:pt-4 md:text-[1.75vw] 3xl:text-5xl mb-2 text-gray-400 rotating-text" id="rotatingText"></p>
-					<p class="pr-12 md:pr-0 text-sm md:text-[1.5vw] md:leading-none py-14 md:w-[30vw] 3xl:text-4xl 3xl:my-16">
+					<p class="text-lg md:pt-2 2xl:pt-4 md:text-2xl 3xl:text-5xl mb-2 text-gray-400 rotating-text" id="rotatingText"></p>
+					<p class="pr-12 md:pr-0 text-sm md:text-2xl md:leading-none py-14 w-[95%] lg:w-[30vw] 3xl:text-5xl 3xl:my-16">
 						Delivering continuity across health data environments in a world of ever-increasing data complexity. 
 					</p>
 				</div>
@@ -41,8 +42,8 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 
 
 			  <!-- Image Column -->
-			  <div id="title_image" class="w-[95%] flex items-end justify-left flex-col items-left">
-				<img src="/graphic1.png" class="md:w-[80rem] 3xl:w-[100rem]" />
+			  <div id="title_image" class="w-full flex justify-center items-center">
+				<img src="/graphic.png" class="w-[90%] md:w-[50rem] lg:w-[60rem] xl:w-[70rem] 3xl:w-[80rem] max-w-full object-contain" />
 			  </div>
 
 			</div> <!-- Content div -->
@@ -56,10 +57,10 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 			  </h1>
 			  
 			<div id="vendor_logos" class="grid grid-cols-2 md:gap-4 justify-center overflow-x-auto md:flex md:justify-center" style="justify-items: center;">
-				<img src="/vendor_logos/Ochsner Health System small.png" alt="Ochsner Health Logo" class="h-[6rem] md:h-[10rem] md:mx-[1rem] 3xl:h-[14rem]" />
-				<img src="/vendor_logos/Government of Western Australia small.png" alt="Western Australia Health Logo" class="h-[6rem] md:h-[10rem] 3xl:h-[14rem] md:mx-[1rem]" />
-				<img src="/vendor_logos/Standford Health Care small.png" alt="Standford Health Care Logo" class="h-[6rem] md:h-[10rem] 3xl:h-[14rem] md:mx-[1rem]" />
-				<img src="/vendor_logos/Lameris_logo.png" alt="Lameris Logo" class="h-[6rem] md:h-[8rem] 3xl:h-[11rem] py-6 md:mx-[1rem] md:my-[1.5rem]" />
+				<img src="/vendor_logos/Ochsner Health System small.png" alt="Ochsner Health Logo" class="h-[6rem] md:h-[8rem] xl:h-[10rem] md:mx-[1rem] 3xl:h-[14rem]" />
+				<img src="/vendor_logos/Government of Western Australia small.png" alt="Western Australia Health Logo" class="h-[6rem] md:h-[8rem] xl:h-[10rem] 3xl:h-[14rem] md:mx-[1rem]" />
+				<img src="/vendor_logos/Standford Health Care small.png" alt="Standford Health Care Logo" class="h-[6rem] md:h-[8rem] xl:h-[10rem] 3xl:h-[14rem] md:mx-[1rem]" />
+				<img src="/vendor_logos/Lameris_logo.png" alt="Lameris Logo" class="h-[6rem] md:h-[6rem] xl:h-[8rem] 3xl:h-[11rem]  py-6 md:mx-[1rem] md:my-[1.5rem]" />
 			</div>
 		</div>
 
@@ -72,9 +73,9 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 			</div>
 
 			<!-- Vendor card column -->
-			<div class="flex flex-col lg:w-[70em] xl:w-[90em] items-center">
-				<div id="vendorFrame" class="relative w-full">
-				  <div id="vendorGroup1" class="grid grid-cols-2 gap-2 md:gap-x-2 grid-auto-rows-[1fr] transition-opacity duration-500 ease-in-out">
+			<div class="flex flex-col lg:w-[80em] xl:w-[90em] items-center">
+				<div id="vendorFrame" class="relative mx-8">
+				  <div id="vendorGroup1" class="grid grid-cols-2 gap-2 md:gap-x-2">
 					<VendorCard 
 					  name="Ochsner Health"
 					  imageSrc="/vendor_logos/Ochsner Health System.png" 
@@ -131,7 +132,7 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 			  
 
 			<!-- Text column -->
-			<div class="flex items-center justify-center  px-12">
+			<div class="flex items-center justify-center px-12">
 				<p class="pt-12 text-center text-sm md:text-3xl 2xl:4xl md:mx-4 text-left">
 					We deliver data-driven software and services to healthcare enterprises and vendors worldwide, providing complete data control at the petabyte scale.
 			</div>
@@ -146,7 +147,7 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 				<!-- Quote Section -->
 				<div id="hdd_col1" class="flex-1 lg:w-1/4 flex flex-col">
 					<h3 class="text-center lg:text-left text-xl md:text-3xl 2xl:text-4xl 3xl:text-5xl pb-4 font-bold text-[#e3690a]">Discovery and Delivery</h3>
-					<p class="font-albert-sans text-center lg:text-left text-sm md:text-2xl 2xl:text-3xl 3xl:text-4xl italic md:leading-none px-12 lg:px-0 lg:pr-20">
+					<p class="font-lato text-center lg:text-left text-sm md:text-2xl 2xl:text-3xl 3xl:text-4xl italic md:leading-none px-12 lg:px-0 lg:pr-20">
 						"Our mission at DesAcc is to develop software and deliver focused expertise that breaks down barriers to health data utilization, ensuring healthcare practitioners and AI models can access the information needed to deliver the best data-driven decisions possible."
 					</p>
 						
@@ -342,14 +343,6 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 		display: none;
 	}
 
-
-	@media (min-width: 768px) {
-		#title_image {
-			display: flex;
-		}
-		
-	}
-
 	.services_title {
 		font-weight: bold;
 		font-size: medium;
@@ -364,6 +357,10 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 
 	@media (min-width: 1023px) {
 		#toggleButton {
+			display: flex;
+		}
+
+		#title_image {
 			display: flex;
 		}
 	}

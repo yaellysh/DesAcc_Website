@@ -1,3 +1,5 @@
+import { late } from 'astro:schema';
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -8,7 +10,8 @@ export default {
 			  },
 			  fontFamily: {
 				albert: ['"Albert Sans"', 'sans-serif'],
-				customSerif: ['"Numans"', 'serif'],     
+				customSerif: ['"Numans"', 'serif'],    
+				lato: ['Lato', 'sans-serif'], 
 			  },
 			  screens: {
 				'3xl': '1920px',
