@@ -73,61 +73,62 @@ import ScrollButtons from '../components/ScrollButtons.jsx';
 
 			<!-- Vendor card column -->
 			<div class="flex flex-col lg:w-[70em] xl:w-[90em] items-center">
-				<div id="vendorFrame" class="flex flex-col lg:flex-row flex-grow">
-					<div id="vendorGroup1" class="grid grid-cols-2 gap-1 md:gap-x-2"> 
-						<VendorCard 
-							name="Ochsner Health"
-							imageSrc="/vendor_logos/Ochsner Health System.png" 
-							description={["PACS/CPACS", "20+ PACS Engagement"]}
-							location="North America"
-						/>
-						<VendorCard 
-							name="Western Australia Health" 
-							imageSrc="/vendor_logos/Government of Western Australia.png" 
-							description={["PACS/VNA/RIS", "Images & 70M+ Reports"]}
-							location="APAC"
-						/>
-						<VendorCard 
-							name="Stanford Health Care" 
-							imageSrc="/vendor_logos/Standford Health Care.png" 
-							description={["APLIS/PACS", "Non-WSI Pathology"]}
-							location="North America"
-						/>
-						<VendorCard 
-							name="Laméris" 
-							imageSrc="/vendor_logos/Lameris_logo.png" 
-							description={["Partner Engagement", "Ophthalmology"]}
-							location="Europe"
-						/>
-					</div>
-					<div id="vendorGroup2" class="grid grid-cols-2 gap-1 md:gap-x-2 hidden"> 
-						<VendorCard 
-							name="Global Technology Vendor" 
-							imageSrc="/vendor_logos/world2.png" 
-							description={["Oncology Platform", "2000+ Cancer Centers"]}
-							location="Worldwide"
-						/>
-						<VendorCard 
-							name="Healthcare Provider" 
-							imageSrc="/vendor_logos/rhcp.png" 
-							description={["200+ Regional Hospitals", "PACS/VNA"]}
-							location="North America"
-						/>
-						<VendorCard 
-							name="Partner Engagement" 
-							imageSrc="/vendor_logos/doc.png" 
-							description={["Document Repository", "XDS Delivery"]}
-							location="Europe"
-						/>
-						<VendorCard 
-							name="Outpatient Imaging Provider " 
-							imageSrc="/vendor_logos/rad svc.png" 
-							description={["PACS/VNA ", "Cloud Centralization"]}
-							location="North America"
-						/>
-					</div>
+				<div id="vendorFrame" class="relative w-full">
+				  <div id="vendorGroup1" class="grid grid-cols-2 gap-2 md:gap-x-2 grid-auto-rows-[1fr] transition-opacity duration-500 ease-in-out">
+					<VendorCard 
+					  name="Ochsner Health"
+					  imageSrc="/vendor_logos/Ochsner Health System.png" 
+					  description={["PACS/CPACS", "20+ PACS Engagement"]}
+					  location="North America"
+					/>
+					<VendorCard 
+					  name="Western Australia Health" 
+					  imageSrc="/vendor_logos/Government of Western Australia.png" 
+					  description={["PACS/VNA/RIS", "Images & 70M+ Reports"]}
+					  location="APAC"
+					/>
+					<VendorCard 
+					  name="Stanford Health Care" 
+					  imageSrc="/vendor_logos/Standford Health Care.png" 
+					  description={["APLIS/PACS", "Non-WSI Pathology"]}
+					  location="North America"
+					/>
+					<VendorCard 
+					  name="Laméris" 
+					  imageSrc="/vendor_logos/Lameris_logo.png" 
+					  description={["Partner Engagement", "Ophthalmology"]}
+					  location="Europe"
+					/>
+				  </div>
+				  <div id="vendorGroup2" class="grid grid-cols-2 gap-2 md:gap-x-2 hidden">
+					<VendorCard 
+					  name="Global Technology Vendor" 
+					  imageSrc="/vendor_logos/world2.png" 
+					  description={["Oncology Platform", "2000+ Cancer Centers"]}
+					  location="Worldwide"
+					/>
+					<VendorCard 
+					  name="Healthcare Provider" 
+					  imageSrc="/vendor_logos/rhcp.png" 
+					  description={["200+ Regional Hospitals", "PACS/VNA"]}
+					  location="North America"
+					/>
+					<VendorCard 
+					  name="Partner Engagement" 
+					  imageSrc="/vendor_logos/doc.png" 
+					  description={["Document Repository", "XDS Delivery"]}
+					  location="Europe"
+					/>
+					<VendorCard 
+					  name="Outpatient Imaging Provider" 
+					  imageSrc="/vendor_logos/rad svc.png" 
+					  description={["PACS/VNA", "Cloud Centralization"]}
+					  location="North America"
+					/>
+				  </div>
 				</div>
-			</div>
+			  </div>
+			  
 
 			<!-- Text column -->
 			<div class="flex items-center justify-center  px-12">
