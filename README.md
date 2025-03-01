@@ -18,9 +18,11 @@ All main files for the website are stored within the src folder (except all grap
 - Pages
     - Contains the main page (index.astro) and three information pages (cookies, privacy and terms)
 
-Some notes:
--  Footer is split into two files. One of them is used for the main page (FooterTop.jsx) and contains scrolling links to headers on the page, while the other is used for the information pages. These could be consolidated into one file but I could not figure out how to get the links to work properly from another page.
-- A similar deal with the Navbar (Navbar.jsx vs. NavbarMain.jsx), again an issue with gettings links to work on pages other than the index.tsx page
+## Notes/ To-Do
+-  Footer is split into two files. One of them is used for the main page (FooterTop.jsx) and contains scrolling links to headers on the page, while the other is used for the information pages. These could be consolidated into one file but I could not figure out how to get the links to sections on the index.astro page to work properly from another page.
+- A similar deal with the Navbar (Navbar.jsx vs. NavbarMain.jsx), again an issue with gettings links to work on pages other than the index.astro page
+- The set of vendor cards autoscrolls between two sets of four and I cannot seem to avoid the jumping/ lack of smooth transition because they're different sizes, there's probably a better way to do it
+- Font for the quote in the bottom section still is not ideal, I've struggled to find one everyone likes
 
 ## Getting Started
 
