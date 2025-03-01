@@ -33,7 +33,7 @@ To get started with the project, follow these steps:
    git clone https://github.com/your-username/desacc-quantitate-website.git
    cd desacc-quantitate-website
    npm install
-   npm run dev```
+   npm run dev
 
 ## Scripts
 
