@@ -1,4 +1,4 @@
-# DesAcc Quantitate Website
+# DesAcc Website
 
 Welcome to the DesAcc Quantitate website repository. This project is built using Astro, React, and Tailwind CSS to deliver a modern, responsive web experience.
 
